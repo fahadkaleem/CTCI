@@ -28,7 +28,6 @@ def isUniqueBruteForce(s):
 
 def isUniqueSort(s):
     # Time: O(nlogn)
-    # Space: depends on the sort method
     if len(s)==0:
         return True
     newString = ''.join(sorted(s))
