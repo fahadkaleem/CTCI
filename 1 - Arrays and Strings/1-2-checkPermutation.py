@@ -11,4 +11,10 @@ def checkPermutationSort(a,b):
             return False
     return True
 
+def checkPermutationCount(a,b):
+    # Time: O(n)
+    pass
+
+
+
 print(checkPermutationSort("appa","papa"))
