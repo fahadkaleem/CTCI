@@ -11,5 +11,5 @@ def stringCompression(word):
     output+=word[-1]+str(letterCount)
     return output
 
-print(stringCompression("abcdef"))
+print(stringCompression("aaaabbbbccccddddddddd"))
 
