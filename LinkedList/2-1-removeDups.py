@@ -1,18 +1,17 @@
-import LinkedList
+from LinkedList import LinkedList
 
 
 def removeDuplicates(linkedList):
     if linkedList.head is None:
-        return 0
-    else:
-        current = linkedList.head
-        seen = set[current.value]
-        while (current):
-            if current.value in seen:
-                current.nextNode = current.nextNode.nextNode
-            else:
-                seen.add(current.value)
-                current = current.value
+        return
+    current = linkedList.head
+    seen = set([current.data])
+    while current.nextNode:
+        if current.nextNode.data in seen:
+            current.nextNode = current.nextNode.nextNode
+        else:
+            seen.add(current.nextNode.data)
+            current = current.nextNode
     return linkedList
 
 linkedList = LinkedList()
