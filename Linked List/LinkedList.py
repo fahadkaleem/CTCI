@@ -32,7 +32,7 @@ class LinkedList:
 
     def insertHead(self, value):
         newNode = LinkedListNode(value)
-        if self.head == None:
+        if self.head is None:
             self.head = self.tail = newNode
         else:
             newNode.nextNode = self.head
@@ -40,13 +40,17 @@ class LinkedList:
         return self.head
 
     def insertTail(self, value):
-        newNode = LinkedListNode(value)
-        if self.head == None:
+        newNode = LinkedList(value)
+        if self.head is None:
             self.head = self.tail = newNode
         else:
             self.tail.nextNode = newNode
             newNode = self.tail
         return self.tail
+
+    def insertMultiple(self, values):
+        for i in values:
+            self.insert(i)
 
     def __generate__(self, n, min_value, max_value):
         self.head = None
@@ -59,5 +63,5 @@ class LinkedList:
 ll = LinkedList()
 ll.__generate__(10, 0, 9)
 ll.__print__()
-ll.insertTail(99)
+ll.insertMultiple([99,98,97,96,94])
 ll.__print__()
