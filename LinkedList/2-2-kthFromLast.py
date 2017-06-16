@@ -1,5 +1,6 @@
 from LinkedList import LinkedList
 
+
 # Time: O(n)
 def kth_to_last(linked_list, k):
     slow = fast = linked_list.head
