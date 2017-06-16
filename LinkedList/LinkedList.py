@@ -58,10 +58,3 @@ class LinkedList:
         for i in range(n):
             self.insert(randint(min_value, max_value))
         return self
-
-
-ll = LinkedList()
-ll.__generate__(10, 0, 9)
-ll.__print__()
-ll.insertMultiple([99,98,97,96,94])
-ll.__print__()
