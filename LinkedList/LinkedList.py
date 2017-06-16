@@ -9,8 +9,8 @@ class LinkedListNode:
 
 class LinkedList:
     def __init__(self, elements=None):
-        head = None
-        tail = None
+        self.head = None
+        self.tail = None
         if elements is not None:
             self.add_elements(elements)
 
