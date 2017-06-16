@@ -30,7 +30,7 @@ class LinkedList:
             self.tail = self.tail.nextNode
         return self.tail
 
-    def insertHead(self, value):
+    def insert_head(self, value):
         newNode = LinkedListNode(value)
         if self.head is None:
             self.head = self.tail = newNode
@@ -39,7 +39,7 @@ class LinkedList:
             self.head = newNode
         return self.head
 
-    def insertTail(self, value):
+    def insert_tail(self, value):
         newNode = LinkedList(value)
         if self.head is None:
             self.head = self.tail = newNode
@@ -48,7 +48,7 @@ class LinkedList:
             newNode = self.tail
         return self.tail
 
-    def insertMultiple(self, values):
+    def insert_multiple(self, values):
         for i in values:
             self.insert(i)
 
