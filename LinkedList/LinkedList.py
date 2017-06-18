@@ -16,11 +16,11 @@ class LinkedList:
 
     def __print__(self):
         current = self.head
-        linkedList = []
+        linked_list = []
         while (current):
-            linkedList.append(str(current.data))
+            linked_list.append(str(current.data))
             current = current.nextNode
-        print(' --> '.join(linkedList))
+        print(' --> '.join(linked_list))
 
     def insert(self, value):
         if self.head is None:
@@ -40,12 +40,12 @@ class LinkedList:
         return self.head
 
     def insert_tail(self, value):
-        newNode = LinkedList(value)
+        new_node = LinkedList(value)
         if self.head is None:
-            self.head = self.tail = newNode
+            self.head = self.tail = new_node
         else:
-            self.tail.nextNode = newNode
-            newNode = self.tail
+            self.tail.nextNode = new_node
+            new_node = self.tail
         return self.tail
 
     def insert_multiple(self, values):
