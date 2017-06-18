@@ -45,7 +45,8 @@ class LinkedList:
             self.head = self.tail = new_node
         else:
             self.tail.nextNode = new_node
-            new_node = self.tail
+            #new_node = self.tail
+            self.tail = new_node
         return self.tail
 
     def insert_multiple(self, values):
