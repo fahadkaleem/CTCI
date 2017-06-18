@@ -31,12 +31,12 @@ class LinkedList:
         return self.tail
 
     def insert_head(self, value):
-        newNode = LinkedListNode(value)
+        new_node = LinkedListNode(value)
         if self.head is None:
-            self.head = self.tail = newNode
+            self.head = self.tail = new_node
         else:
-            newNode.nextNode = self.head
-            self.head = newNode
+            new_node.nextNode = self.head
+            self.head = new_node
         return self.head
 
     def insert_tail(self, value):
